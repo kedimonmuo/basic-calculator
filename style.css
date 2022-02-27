@@ -23,6 +23,7 @@
     gap: 3px;
     grid-template-columns: repeat(autofit, minmax(150px, 1fr));
     background-color: black;
+    border-radius: 10%;
     
 }
 
@@ -30,6 +31,7 @@
 
     background-color: cadetblue;
     padding: 1rem;
+    border-radius: 10%;
 }
 
 
@@ -40,27 +42,38 @@
     gap: 3px;
     grid-template-columns: repeat(4, 50px);
     background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid:1rem ;
    
 }
 
+input{
+   
+    background-color: white;
+    text-align: end;
+    padding: 20px;
+    /*border- radius dos not work as I want on display screen */
+    /*border-radius: ??? */
+    font-size: medium;
 
-
-
-.input{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid: 1rem ;
-    background-color: cadetblue;
 
 }
 
 button{
 
     border:none;
-    height:50px;
-    width:50px;
+    height:60px;
+    width:60px;
     background-color:black;
     color: aliceblue;
     border-radius: 20%;
+    font-size: medium;
+
+}
+
+button .lastbut {
+    width: 100px;
+    border-radius: 40%;
 
 }
